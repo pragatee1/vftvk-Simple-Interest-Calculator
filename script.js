@@ -13,7 +13,6 @@ function compute() {
 }
 
 function updateRateBySlider() {
-    /*set variable rate val*/
     var rate_val = parseFloat(document.getElementById('rate').value);
     document.getElementById('rate_val').value = rate_val;
 }
@@ -22,6 +21,7 @@ function updateRateByInput() {
     var rate_val = parseFloat(document.getElementById('rate_val').value);
     document.getElementById('rate_val').value = Math.min(Math.max(1, Math.round(rate_val*4)/4), 20);
     document.getElementById('rate').value = Math.min(Math.max(1, Math.round(rate_val*4)/4), 20);
-    /*math*/
     return true;
 }
+
+
